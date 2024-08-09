@@ -24,7 +24,7 @@ export default function NavbarTemp () {
           <button
             data-collapse-toggle='navbar-default'
             type='button'
-            className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600'
+            className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600'
             aria-controls='navbar-default'
             aria-expanded='false'
             onClick={toggleNavbar}
@@ -60,7 +60,7 @@ export default function NavbarTemp () {
               <li>
                 <a
                   href='/About'
-                  className='block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
+                  className='block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
                 >
                   About
                 </a>
@@ -68,7 +68,7 @@ export default function NavbarTemp () {
               <li>
                 <a
                   href='/admission'
-                  className='block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
+                  className='block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
                 >
                   Admission
                 </a>
@@ -76,7 +76,7 @@ export default function NavbarTemp () {
               <li>
                 <a
                   href='/Subjects'
-                  className='block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
+                  className='block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
                 >
                   Courses
                 </a>
@@ -84,7 +84,7 @@ export default function NavbarTemp () {
               <li>
                 <a
                   href='/login'
-                  className='block py-2 px-3 text-gray-400 rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
+                  className='block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0'
                 >
                   Sign In
                 </a>

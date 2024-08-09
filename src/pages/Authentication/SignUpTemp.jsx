@@ -52,9 +52,9 @@ function SignUpTemp () {
       })
   }
   return (
-    <div className='ml-100 mb-8'>
+    <div className='flex flex-col items-center justify-center px-4 py-4 mx-auto md:h-screen lg:py-0 mt-5 mb-18'>
         <h1 className='mt-10 text-xl font-bold text-yellow-500'>GUIDANCE EDUCARE</h1>
-        <div className='w-full dark:bg-yellow-500 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 text-black'>
+        <div className='w-full bg-gray-500 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 text-black'>
           <div className='p-6 space-y-4 md:space-y-6 sm:p-8'>
             <h1 className='text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white'>
               Create Account
@@ -214,7 +214,7 @@ function SignUpTemp () {
                 </button>
                 {submitError && <p className='text-red-500'>{submitError}</p>}
               </div>
-              <p className='text-sm font-light text-gray-500 dark:text-gray-400'>
+              <p className='text-sm font-light text-gray-500 '>
                 Already Have an Account?{' '}
                 <Link to='/login'>
                   <span className='font-medium text-primary-600 hover:underline dark:text-primary-500 cursor-pointer'>

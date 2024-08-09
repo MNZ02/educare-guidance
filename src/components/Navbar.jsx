@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='sticky top-0 w-full bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 z-10 '>
+    <nav className='sticky top-0 w-full bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 z-10 text-white '>
       <div className='max-w-7xl mx-auto px-0 py-5 lg:py-6'>
         <div className='flex justify-between h-16'>
           <div className='flex'>
@@ -29,7 +29,7 @@ const Navbar = () => {
               <ul className='flex text-lg m-2 py-2'>
                 <li>
                   <Link to='/'>
-                    <button className='text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110'>
+                    <button className='text-lg bg-transparent  text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110'>
                       Home
                     </button>
                   </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
                 <li>
                   <Link to='/admission'>
-                    <button className='text-lg bg-transparent hover:text-black text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110'>
+                    <button className='text-lg bg-transparent  text-white font-semibold py-2 px-3 rounded mr-2 transition-transform duration-300 hover:scale-110'>
                       Admission
                     </button>
                   </Link>
