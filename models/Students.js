@@ -23,12 +23,10 @@ const studentsSchema = new mongoose.Schema({
     required: true
   },
 
-  enrollmentDate: {
-    type: Date,
-    required: true
-  },
-  course: {
-    type: String
+  stream: {
+    type: String,
+    required: true,
+    enum: ['Science', 'Commerce', 'Arts']
   }
 })
 
