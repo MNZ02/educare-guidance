@@ -1,16 +1,17 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const AdminSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true
+    required: true,
   },
+
   password: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const Admin = mongoose.model('Admin', AdminSchema)
+const Admin = mongoose.model("Admin", AdminSchema);
 
-export default Admin
+export default Admin;
