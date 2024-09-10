@@ -13,12 +13,16 @@ export const register = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 12)
 
-    const user = await User.create({
+    await User.create({
       email,
       password: hashedPassword,
       ...rest
     })
-    res.status(201).json({ message: 'User registered successfully', user })
+
+    const token = jwt.sign({ email }, process.env.JWT_SECRET_KEY, {
+      expiresIn: '1h'
+    })
+    res.status(201).json({ message: 'User registered successfully', token })
   } catch (error) {
     console.error('Error registering user', error.message)
     res.status(500).json({ message: 'Internal server error' })
