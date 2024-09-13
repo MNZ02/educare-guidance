@@ -4,6 +4,7 @@ const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [userRole, setuserRole] = useState('')
   const [loading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -21,7 +22,11 @@ export const AuthProvider = ({ children }) => {
         data
       )
       const token = response.data.token
+      const role = response.data.role
       localStorage.setItem('token', token)
+      localStorage.setItem('role', role)
+      setuserRole(role)
+
       if (response.status === 200) {
         setIsAuthenticated(true)
       } else {
@@ -36,7 +41,9 @@ export const AuthProvider = ({ children }) => {
     setIsAuthenticated(false)
   }
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout, loading }}>
+    <AuthContext.Provider
+      value={{ isAuthenticated, login, logout, loading, userRole }}
+    >
       {children}
     </AuthContext.Provider>
   )
